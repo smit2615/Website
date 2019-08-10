@@ -1,2 +1,61 @@
-<h1>Hello! My name is Nathan.</h1>
-<img src="#"/>
+<div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="30px">
+    <h1>Hello!</h1>
+    <mat-card>
+        <img mat-card-image src="../../assets/homepage.jpg"/>
+        <mat-toolbar color="accent"></mat-toolbar>
+        <mat-card-title>My name is Nathan</mat-card-title>
+        <mat-card-subtitle>nice to meet you</mat-card-subtitle>
+    </mat-card>
+
+    <div fxLayout="row">
+        <div fxFlex="30%"></div>
+
+        <mat-card fxFlex="30%"> 
+            <mat-card-title>About Me</mat-card-title>
+            <mat-divider></mat-divider>
+            <mat-card-content>
+                I am a .NET developer with 2 years of experience working on
+                web applications and backend services. I also have experience
+                with creating single page apps using Angular, as well as mobile
+                apps with tools like NativeScript.
+            </mat-card-content>
+        </mat-card>
+
+        <div fxFlex="40%"></div>
+    </div>
+
+    <div fxLayout="row">
+        <div fxFlex="40%"></div>
+    
+        <mat-card fxFlex="30%"> 
+            <mat-card-title>My Hobbies</mat-card-title>
+            <mat-divider></mat-divider>
+            <mat-card-content>
+                I've been a drummer since 5th grade and I love to
+                play music. I lift weights most days when I get off
+                work. On the weekends I like to spend time with friends
+                either playing games or going out.
+            </mat-card-content>
+        </mat-card>
+    
+        <div fxFlex="30%"></div>
+    </div>
+
+    <div fxLayout="row">
+        <div fxFlex="30%"></div>
+        
+        <mat-card fxFlex="30%"> 
+            <mat-card-title>Learn More</mat-card-title>
+            <mat-divider></mat-divider>
+            <mat-card-content>
+                I complete various projects outside of work to allow
+                myself the chance to learn and work with a wide range
+                of new tools. Take a look at some of the cool things
+                I've completed or am currently working on. 
+            </mat-card-content>
+            <a mat-stroked-button color="accent">Projects</a>
+        </mat-card>
+        
+        <div fxFlex="40%"></div>
+    </div>
+</div>

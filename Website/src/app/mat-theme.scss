@@ -1,0 +1,18 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+
+$web-app-primary: mat-palette($mat-grey, 900);
+$web-app-accent:  mat-palette($mat-orange, A200, A100, A400);
+
+
+$web-app-warn:    mat-palette($mat-red);
+
+$web-app-theme: mat-light-theme($web-app-primary, $web-app-accent, $web-app-warn);
+
+@include angular-material-theme($web-app-theme);
+
+.header-button.mat-button .mat-button-focus-overlay {
+    background-color: white;
+}
