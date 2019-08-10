@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
 import { HeaderComponent } from './header/header.component';
 
-import { MaterialModule } from './material/material.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,7 @@ import { MaterialModule } from './material/material.module';
     BrowserAnimationsModule,
     AppRoutingModule,
     HomeModule,
-    MaterialModule
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

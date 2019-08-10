@@ -1,0 +1,13 @@
+mat-card {
+    max-width: 25%;
+    border-radius: 25px;
+}
+
+mat-card mat-toolbar {
+    height: 5px;
+    margin-bottom: 15px;
+}
+
+mat-card-content {
+    margin-top: 15px;
+}
