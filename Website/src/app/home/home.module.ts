@@ -6,9 +6,10 @@ import { HomeComponent } from './home.component';
 import { SharedModule } from '../shared/shared.module';
 import { ProjectsComponent } from '../projects/projects.component';
 import { ProjectCardComponent } from '../project-card/project-card.component';
+import { ProjectDialogComponent } from '../project-dialog/project-dialog.component';
 
 @NgModule({
-  declarations: [HomeComponent, ProjectsComponent, ProjectCardComponent],
+  declarations: [HomeComponent, ProjectsComponent, ProjectCardComponent, ProjectDialogComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
@@ -18,7 +19,11 @@ import { ProjectCardComponent } from '../project-card/project-card.component';
     HomeComponent,
     ProjectsComponent,
     ProjectCardComponent,
+    ProjectDialogComponent,
     HomeRoutingModule
+  ],
+  entryComponents: [
+    ProjectDialogComponent
   ]
 })
 export class HomeModule { }
