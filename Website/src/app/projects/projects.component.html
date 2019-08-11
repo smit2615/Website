@@ -2,42 +2,17 @@
   <h1>Here's what I've worked on.</h1>
 </div>
 <div fxLayout="row wrap" fxLayoutAlign="flex-start" fxLayoutGap="30px">
-  <mat-card fxFlex="0 1 calc(33.3% - 32px)">
-    <mat-card-title>Poetry RNN</mat-card-title>
+  <app-project-card *ngFor="let project of projects"
+    [project]="project" fxFlex="0 1 calc(33.3% - 32px)">
+  </app-project-card>
+  <mat-card class="resume-intro" fxFlex="0 1 calc(25% - 32px)">
     <mat-card-content>
-      A recurrent neural net capable of generating poetry.
+      Checkout my resume to find out more about my experience!
     </mat-card-content>
     <mat-card-actions>
-      <button mat-stroked-button color="accent">More</button>
+      <div fxFlex="1 1 auto"></div>
+      <a mat-stroked-button color="accent">Resume</a>
     </mat-card-actions>
-  </mat-card>
-  <mat-card fxFlex="0 1 calc(33.3% - 32px)">
-      <mat-card-title>Unity Truck Loader</mat-card-title>
-      <mat-card-content>
-        Training/planning tool used by Sisking Steel in Louisville, KY
-        to help their truck loaders complete their task.
-      </mat-card-content>
-  </mat-card>
-  <mat-card fxFlex="0 1 calc(33.3% - 32px)">
-      <mat-card-title>Raspberry Pi Television Remote</mat-card-title>
-      <mat-card-content>
-        NodeJS web API running on a raspberry pi that sends CEC commands
-        to a TV over an HDMI cable.
-      </mat-card-content>
-  </mat-card>
-  <mat-card fxFlex="0 1 calc(33.3% - 32px)">
-      <mat-card-title>NativeScript Mobile App</mat-card-title>
-      <mat-card-content>
-        Android and iOS application for maintaining character
-        sheets for the game DnD.
-      </mat-card-content>
-  </mat-card>
-  <mat-card fxFlex="0 1 calc(33.3% - 32px)">
-      <mat-card-title>Hopper Polling System</mat-card-title>
-      <mat-card-content>
-        Angular site that provides a forum for voting on and communicating
-        new ideas within a company.
-      </mat-card-content>
   </mat-card>
 </div>
 

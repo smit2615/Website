@@ -5,9 +5,10 @@ import { HomeComponent } from './home.component';
 
 import { SharedModule } from '../shared/shared.module';
 import { ProjectsComponent } from '../projects/projects.component';
+import { ProjectCardComponent } from '../project-card/project-card.component';
 
 @NgModule({
-  declarations: [HomeComponent, ProjectsComponent],
+  declarations: [HomeComponent, ProjectsComponent, ProjectCardComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
@@ -16,6 +17,7 @@ import { ProjectsComponent } from '../projects/projects.component';
   exports: [
     HomeComponent,
     ProjectsComponent,
+    ProjectCardComponent,
     HomeRoutingModule
   ]
 })

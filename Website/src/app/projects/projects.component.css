@@ -2,6 +2,12 @@ h1 {
     margin-bottom: 30px;
 }
 
-mat-card {
+app-project-card {
     margin-bottom: 15px;
+}
+
+.resume-intro {
+    border-radius: 25px;
+    height: fit-content;
+    padding: 25px;
 }
