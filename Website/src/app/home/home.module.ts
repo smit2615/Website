@@ -4,9 +4,10 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 
 import { SharedModule } from '../shared/shared.module';
+import { ProjectsComponent } from '../projects/projects.component';
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [HomeComponent, ProjectsComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
@@ -14,6 +15,7 @@ import { SharedModule } from '../shared/shared.module';
   ],
   exports: [
     HomeComponent,
+    ProjectsComponent,
     HomeRoutingModule
   ]
 })
