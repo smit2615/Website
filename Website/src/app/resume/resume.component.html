@@ -2,6 +2,21 @@
   <h1>These are my experiences.</h1>
 </div>
 
-<div fxLayout="column" fxLayoutAlign="center center">
+<div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="30px">
+  <button mat-stroked-button color="accent">Download <mat-icon>get_app</mat-icon></button>
   <object width="800" height="800" data="../../assets/NathanSmith.pdf"></object>
+
+  <mat-card>
+    <mat-card-title>Get in touch!</mat-card-title>
+    <mat-card-content>
+      Contact me on LinkedIn or send me an email:
+    </mat-card-content>
+
+    <mat-card-actions>
+      <div fxLayout="column" fxLayoutAlign="flex-start" fxLayoutGap="5px">
+        <a href="mailto:ns23@iu.edu" mat-stroked-button color="accent"><mat-icon>email</mat-icon> Email</a>
+        <button mat-stroked-button color="accent">LinkedIn</button>
+      </div>
+    </mat-card-actions>
+  </mat-card>
 </div>

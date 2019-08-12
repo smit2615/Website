@@ -9,6 +9,10 @@ mat-toolbar span {
     margin-right: 20px;
 }
 
+.mat-icon-button img {
+    max-height: 30px;
+}
+
 .fill-space {
     flex: 1 1 auto;
 }
