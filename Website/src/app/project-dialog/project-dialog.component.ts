@@ -1,9 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-
-export interface ProjectDialogData {
-  content: string;
-}
+import { Project } from '../models/project';
 
 @Component({
   selector: 'app-project-dialog',
@@ -14,7 +11,7 @@ export class ProjectDialogComponent implements OnInit {
 
   constructor(
     public dialogRef: MatDialogRef<ProjectDialogComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: ProjectDialogData) {}
+    @Inject(MAT_DIALOG_DATA) public project: Project) {}
 
   close(): void {
     this.dialogRef.close();

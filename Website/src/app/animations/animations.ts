@@ -25,7 +25,7 @@ export const slideInAnimation =
           animate('300ms ease-out', style({ left: '0%'}))
         ])
       ]),
-      query(':enter', animateChild()),
+      query(':enter', animateChild())
     ]),
     //left to right
     transition('* => ResumePage', [

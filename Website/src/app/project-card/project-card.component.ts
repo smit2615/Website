@@ -19,8 +19,9 @@ export class ProjectCardComponent implements OnInit {
 
   openDialog(): void {
     const dialogRef = this.dialog.open(ProjectDialogComponent, {
-      width: '250px',
-      data: {content: this.project.additionalContent}
+      width: '500px',
+      data: {title: this.project.title, iconSrc: this.project.iconSrc, 
+        details: this.project.details, imageSrc: this.project.imageSrc}
     });
   }
 

@@ -1,13 +1,16 @@
 export class Project {
     title: string;
-    content: string;
+    description: string;
+    iconSrc: string;
+    details: string;
     imageSrc: string;
-    additionalContent: string;
 
-    constructor(title: string, content: string, imageSrc: string, additionalContent: string) {
+    constructor(title: string, content: string, iconSrc: string,
+        details: string, imageSrc: string) {
         this.title = title;
-        this.content = content;
+        this.description = content;
+        this.iconSrc = iconSrc;
+        this.details = details;
         this.imageSrc = imageSrc;
-        this.additionalContent = additionalContent;
     }
 }

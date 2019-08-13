@@ -1,6 +1,11 @@
-<h1 mat-dialog-title>{{data.title}}</h1>
+<div fxLayout="row">
+    <h1 mat-dialog-title>{{project.title}}</h1>
+</div>
+
+<mat-divider></mat-divider>
 <div mat-dialog-content>
-  <p>{{data.content}}</p>
+  <p *ngIf="project.details">{{project.details}}</p>
+  <img *ngIf="project.imageSrc" src="{{project.imageSrc}}"/>
 </div>
 <div mat-dialog-actions>
   <button mat-button (click)="close()">Close</button>

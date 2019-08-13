@@ -19,4 +19,8 @@ export class AppComponent {
       outlet.activatedRouteData['animation'];
     }
   }
+
+  resetWindow() {
+    window.scrollTo(0, 0);
+  }
 }

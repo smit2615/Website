@@ -1,6 +1,11 @@
-<app-header></app-header>
-<div [@routeAnimations]="prepareRoute(outlet)">
-    <router-outlet #outlet="outlet"></router-outlet>
-</div>
-<app-footer></app-footer>
+<div class="all-wrapper">  
+    <app-header></app-header>
+    <div class="page-wrapper" fxLayout="column">
+        <div class="content-wrapper" fxLayout="column" fxFlex="1" 
+        [@routeAnimations]="prepareRoute(outlet)" (@routeAnimations.start)="resetWindow()">
+            <router-outlet #outlet="outlet"></router-outlet>
+        </div>
+        <app-footer class="footer"></app-footer>
+    </div>
+</div> 
 
